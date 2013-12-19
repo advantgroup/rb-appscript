@@ -9,12 +9,15 @@
  *  - Jordan Breeding (64-bit support patch)
  */
 
-
+#include "osx_ruby.h"
+#include <Carbon/Carbon.h>
+#include <CoreFoundation/CoreFoundation.h>
+#include "SendThreadSafe.h"
 
 // AE module and classes
-static VALUE mAE;
-static VALUE cAEDesc;
-static VALUE cMacOSError;
+static VALUE = mAE;
+static VALUE = cAEDesc;
+static VALUE = cMacOSError;
 
 // Note: AEDescs need extra wrapping to avoid nasty problems with Ruby's Data_Wrap_Struct.
 struct rbAE_AEDescWrapper {
