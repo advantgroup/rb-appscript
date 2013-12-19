@@ -7,13 +7,9 @@
  *  Thanks to:
  *  - FUJIMOTO Hisakuni, author of RubyAEOSA
  *  - Jordan Breeding (64-bit support patch)
- *	#include "osx_ruby.h"
  */
 
 
-#include <Carbon/Carbon.h>
-#include <CoreFoundation/CoreFoundation.h>
-#include "SendThreadSafe.h"
 
 // AE module and classes
 static VALUE mAE;
